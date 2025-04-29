@@ -36,3 +36,38 @@ body{
     display:inline-block;
 
 } 
+
+.center-dot{
+    position:absolute;
+    width:25px;
+    height:25px;
+    background-color: gray;
+    border-radius:50%;
+}
+
+.hour-hand{
+    width:12px;
+    height:130px;
+    background-color: black;
+
+}
+
+.hour-hand, .minute-hand, .second-hand{
+   --rotate:0;
+   position:absolute;
+   left:50%;
+   bottom:50%;
+   transform:translate(-50%) rotate(calc(var(--rotate)*1deg));
+}
+
+.minute-hand{
+    width:12px;
+    height:190px;
+    background-color:blue;
+}
+
+.second-hand{
+    width:6px;
+    height:210px;
+    background-color:red;
+}
